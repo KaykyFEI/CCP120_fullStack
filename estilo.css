@@ -1,0 +1,59 @@
+/*CSS*/
+* {
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid #18cf37;
+    color: #18cf37;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, li {
+    color: #18cf37;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #18cf37;
+    text-decoration: overline underline;
+    text-decoration-color:white;
+    text-align: center;
+}
+
+.iframe_center {
+    display: flex;
+    justify-content: center;
+}
+
+.center-image {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#end_fei {
+    text-decoration: overline underline;
+    text-decoration-color:white;
+    font-size: 30px;
+}
+
+#listas_esquerda {
+    text-align: left;
+}
