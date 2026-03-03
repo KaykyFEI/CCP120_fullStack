@@ -1,0 +1,24 @@
+img.livros {
+    display: inline;
+    height: 300px;
+    margin: 0px 30px;
+}
+
+header div {
+    position: relative;
+    display: inline;
+}
+
+header h1 {
+    margin: 0% 50%;
+    color:darkgreen;
+}
+
+#cIcon {
+    width: 50px;
+}
+
+#javaIcon {
+    width: 50px;
+    position: absolute;
+}
