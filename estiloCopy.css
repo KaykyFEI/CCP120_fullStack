@@ -18,7 +18,7 @@
 
 html {
 	font-size: 16px;
-
+}
 body {
 	background: var(--bg-global);
 	font-family: sans-serif;
@@ -144,6 +144,10 @@ img.livros {
 	text-decoration: none;
 	color: darkred;
 	margin-left: 20px;
+}
+
+ul {
+	padding: 0 30px;
 }
 
 #cIcon, #javaIcon {
