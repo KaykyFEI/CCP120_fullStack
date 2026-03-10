@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex;
+    background-color: lightskyblue;
+    
+    /* Define o fluxo de exibição em que os elementos serão organizados. */
+    /* flex-direction: row; */
+
+    /* Permite que ocora a "quebra de linha" nos itens. */
+    /* flex-wrap: wrap-reverse; */
+
+    /* Permite juntar flex-direction e flex-wrap em uma única propriedade. */
+    flex-flow: row wrap;
+
+    /* Alinhamento dos itens ao longo do eixo principal do container */
+    justify-content: space-around;
+
+    height: 400px;
+
+    /* Propriedade utilizada para alinhar as linhas flexíveis. */
+    /* align-content: space-between; */
+
+    /* Alinhamento dos itens flexíves */
+    align-items: baseline;
+}
+
+.flex-container div {
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-container #div7 {
+    background-color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 5px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
