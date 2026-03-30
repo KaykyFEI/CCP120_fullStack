@@ -1,0 +1,73 @@
+/* =========================================
+   LISTA DE COMANDOS CSS + EXEMPLO PRÁTICO
+   ========================================= */
+
+/* 📦 MODELO DE CAIXA (BOX MODEL) E DIMENSÕES */
+.elemento-caixa {
+  width: 300px;                  /* Largura */
+  height: 200px;                 /* Altura */
+  margin: 20px auto;             /* Espaçamento externo */
+  padding: 15px;                 /* Espaçamento interno */
+  border: 2px solid #000;        /* Borda */
+  box-sizing: border-box;        /* Controle de cálculo de tamanho */
+}
+
+/* 📐 LAYOUT E ESTRUTURA (FLEXBOX E GRID) */
+.container-flex {
+  display: flex;                 /* Ativa o Flexbox */
+  justify-content: space-between;/* Alinhamento horizontal */
+  align-items: center;           /* Alinhamento vertical */
+  gap: 15px;                     /* Espaçamento entre itens */
+}
+
+.container-grid {
+  display: grid;                 /* Ativa o Grid */
+  grid-template-columns: 1fr 1fr;/* Define colunas */
+}
+
+/* ✍️ TIPOGRAFIA E TEXTOS */
+.texto-estilizado {
+  color: #333333;                /* Cor do texto */
+  font-family: Arial, sans-serif;/* Estilo da fonte */
+  font-size: 18px;               /* Tamanho da fonte */
+  font-weight: bold;             /* Espessura (negrito) */
+  text-align: center;            /* Alinhamento do texto */
+  text-decoration: underline;    /* Decoração (sublinhado) */
+  line-height: 1.6;              /* Altura da linha */
+}
+
+/* 🎨 CORES E FUNDOS */
+.fundo-estilizado {
+  background-color: #3498db;     /* Cor de fundo */
+  background-image: url('bg.jpg');/* Imagem de fundo */
+  opacity: 0.9;                  /* Transparência */
+  box-shadow: 2px 2px 5px #000;  /* Sombra */
+}
+
+/* 📍 POSICIONAMENTO */
+.elemento-posicionado {
+  position: absolute;            /* Tipo de posicionamento */
+  top: 50px;                     /* Distância do topo */
+  right: 20px;                   /* Distância da direita */
+  z-index: 10;                   /* Ordem de sobreposição */
+}
+
+/* 🎬 EFEITOS E ANIMAÇÕES */
+.botao-interativo {
+  transition: all 0.3s ease;     /* Transição suave */
+}
+
+.botao-interativo:hover {
+  transform: scale(1.1);         /* Aumenta o tamanho ao passar o mouse */
+  background-color: #2980b9;
+}
+
+@keyframes piscar {              /* Criação de animação */
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.elemento-animado {
+  animation: piscar 2s infinite; /* Aplicação da animação */
+}
