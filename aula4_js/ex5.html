@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        let idade = 0
+        let sexo = ""
+        let salario = 0
+
+        while (true) {
+            // Solicitação de entrada da idade
+            idade = parseInt(prompt("Insira a idade: "))
+            // Validação da idade informada
+            if (idade < 0) {
+                console.log("Idade digitada inválida.")
+                break
+            }
+            // Solicitação de entrada do sexo
+            sexo = prompt("Insira o sexo (M) or (F): ")
+            // Validação do sexo informado
+            if (sexo != "M" && sexo != "m" && sexo != "F" && sexo != "f") {
+                console.log("Sexo inválido.")
+                break
+            }
+            // Solicitação de entrada do salário
+            salario = parseInt(prompt())
+        }
+
+
+
+    </script>
+</body>
+
+</html>
