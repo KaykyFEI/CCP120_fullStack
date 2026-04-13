@@ -1,0 +1,10 @@
+p {
+    font-size: large;
+    color: green;
+    border: 2px black solid;
+    display: inline;
+}
+
+body {
+    text-align: center;
+}
