@@ -33,13 +33,25 @@ ctx.strokeRect(10, 10, 50, 50);
 ctx.closePath(); */
 
 // Podemos desenhar diversas formas geométricas
-ctx.beginPath();
-ctx.lineWitdh = 2;
+/* ctx.beginPath();
+ctx.lineWidth = 2;
 ctx.fillStyle = 'blue';
 ctx.strokeStyle = 'red';
-
-// Pesquisar o que o .moveTo faz
 ctx.moveTo(200, 150);
 ctx.lineTo(60, 10);
+ctx.lineTo(60,250);
+ctx.lineTo(200, 250);
+ctx.lineTo(200, 150);
+ctx.fill();
+ctx.stroke();
+ctx.closePath(); */
 
+// Círculo
+ctx.beginPath();
+ctx.lineWidth = 2;
+ctx.fillStyle = 'blue';
+ctx.strokeStyle = 'red';
+ctx.arc(200, 200, 50, 1.5*Math.PI,2.5*Math.PI);
+ctx.fill();
+ctx.stroke();
 ctx.closePath();
