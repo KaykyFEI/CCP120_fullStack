@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Gerência de Carros</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <div class="container">
+    <h1>Gerência de Carros</h1>
+
+    <h2>Cadastrar Novo Carro</h2>
+    <form action="/carro/novo" method="POST">
+      <input type="text" name="marca" placeholder="Marca" required>
+      <input type="text" name="modelo" placeholder="Modelo" required>
+      <input type="number" name="ano" placeholder="Ano" required>
+      <input type="number" name="qtde_disponivel" placeholder="Quantidade" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Carros Cadastrados</h2>
+    <table>
+      <tr><th>Marca</th><th>Modelo</th><th>Ano</th><th>Qtd</th><th>Ações</th></tr>
+      <% carros.forEach(c => { %>
+        <tr>
+          <td>
+            <form action="/carro/atualizar/<%= c._id %>" method="POST">
+              <input type="text" name="marca" value="<%= c.marca %>" required>
+          </td>
+          <td><input type="text" name="modelo" value="<%= c.modelo %>" required></td>
+          <td><input type="number" name="ano" value="<%= c.ano %>" required></td>
+          <td>
+            <input type="number" name="qtde_disponivel" value="<%= c.qtde_disponivel %>" required>
+            <% if (c.qtde_disponivel == 0) { %><span class="esgotado">Esgotado</span><% } %>
+          </td>
+          <td>
+              <button type="submit">Atualizar</button>
+            </form>
+            <form action="/carro/remover/<%= c._id %>" method="POST" style="display:inline">
+              <button type="submit">Remover</button>
+            </form>
+            <form action="/carro/vender/<%= c._id %>" method="POST" style="display:inline">
+              <button type="submit">Vender</button>
+            </form>
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+    <br><a href="/listagem">Ver Listagem</a> | <a href="/">Home</a>
+  </div>
+</body>
+</html>
